@@ -1,0 +1,65 @@
+.navbar-container {
+  width: 100%;
+  height: 62px;
+  background-color: #2c4ee6;
+  position: fixed;
+  z-index: 99999;
+}
+.navbar-container article {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.6em;
+}
+.icon {
+  padding: 0.3em 0.6em;
+  position: relative;
+}
+.search {
+  flex-basis: 60%;
+  padding: 0.3em 0.6em;
+  position: relative;
+}
+
+.notification {
+  flex-basis: 5%;
+  padding: 0.6em 0.6em;
+}
+/* .notification button {
+  width: 10%;
+  height: 10%;
+} */
+.notification div i {
+  color: white;
+}
+/* ===================search comp css=================== */
+.search-container {
+  border: 0.06em solid rgb(255, 255, 255);
+  position: absolute;
+  width: 100%;
+  border-radius: 5px;
+  background: #fff;
+  padding: 0.3em 0.6em;
+}
+.search-container svg {
+  color: rgb(161, 156, 156);
+}
+.search-container input {
+  padding: 0.3em 0.6em;
+  position: absolute;
+  width: 80%;
+  border: none;
+  outline: none;
+}
+/* =================================================icon================================================================ */
+
+.alpha_icon {
+  width: 80px;
+  height: 45px;
+  object-fit: contain;
+}
+/* ===============================notification============================================== */
+.notify {
+  color: white;
+  font-size: x-large;
+}

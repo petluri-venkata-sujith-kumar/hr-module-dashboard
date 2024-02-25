@@ -1,0 +1,149 @@
+#attendance-container {
+  width: 100%;
+  padding: 2%;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  color: #2e52dc;
+  border-bottom: 1px solid #2e52dc;
+}
+
+.timer {
+  font-size: 18px;
+  color: #2e52dc;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+#login-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 70%;
+  height: 250px;
+  margin: 2%;
+  border: 3px solid aliceblue;
+  border-radius: 10px;
+}
+
+.login-data-container,
+.logout-data-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: aliceblue;
+  border: 1px solid aliceblue;
+  padding: 10px;
+  border-radius: 8px;
+  width: 25%;
+  height: 150px;
+}
+
+.login-data-container {
+  order: 1;
+}
+
+.logout-data-container {
+  order: 2;
+}
+
+.login-data-container svg {
+  font-size: 3.5em;
+  color: #15c38e;
+  border-radius: 50%;
+  border: 1px solid #15c38e;
+  background: #fff;
+  padding: 10px;
+}
+
+.logout-data-container svg {
+  font-size: 3.5em;
+  color: #ff0000;
+  border: 1px solid #ff0000;
+  background: #fff;
+  border-radius: 50%;
+  border: 1px solid #ff0000;
+  background: #fff;
+  padding: 10px;
+}
+
+.current-location {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5em;
+}
+
+.current-location svg {
+  margin-right: 5px;
+  font-size: 1.5em;
+  color: #2e52dc;
+}
+
+.attendance-login-btn,
+.attendance-logout-btn {
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1em;
+}
+
+.attendance-login-btn {
+  background-color: #ff0000;
+}
+
+.attendance-logout-btn {
+  background-color: #15c38e;
+}
+
+.attendance-login-btn:active,
+.attendance-logout-btn:active {
+  border: 1px solid#15c38e;
+}
+
+.login-container.disabled,
+.logout-container.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.attendance-status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  border: 3px solid aliceblue;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+.local-login-time span {
+  font-size: 1em;
+  font-weight: 600;
+  color: #15c38e;
+}
+.local-logout-time span {
+  font-size: 1em;
+  font-weight: 600;
+  color: #ff0000;
+}
+.local-login-time > p,
+.local-logout-time > p {
+  text-align: center;
+}

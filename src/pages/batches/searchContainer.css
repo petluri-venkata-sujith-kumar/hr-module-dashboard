@@ -1,0 +1,46 @@
+.search-batch-container {
+  width: 100%;
+  height: 50px;
+}
+
+.searchbar {
+  width: 100%;
+  height: 80%;
+  border: 2px solid rgb(212, 212, 212);
+  display: flex;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.searchbar > .filter {
+  flex-basis: 15%;
+}
+.search-batch {
+  width: 100%;
+  height: 100%;
+}
+
+.search-icon {
+  width: 5%;
+  margin-top: 0.5em;
+}
+
+.search-icon svg {
+  font-size: 1.5em;
+  color: rgb(198, 198, 198);
+}
+
+.search-batch input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 0 2em;
+  font-size: 1em;
+  color: #111;
+}
+
+.search-batch input::placeholder {
+  font-size: 1em;
+  color: #aaa9a9;
+}

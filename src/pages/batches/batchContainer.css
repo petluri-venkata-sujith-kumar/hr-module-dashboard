@@ -1,0 +1,184 @@
+:root {
+  /* --myOrange: #ea5a29; */
+  --myOrange: #2c4ee6;
+  --lightgray: #656565;
+}
+
+/* ===================== all batches css start here ==========*/
+#allBatches-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.allBatches {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1em;
+  overflow-y: auto;
+}
+
+/* ==================spinner========== */
+.spinner {
+  position: absolute;
+  top: 35%;
+  left: 40%;
+  display: grid;
+  place-items: center;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background: conic-gradient(
+    from 180deg at 50% 50%,
+    rgba(82, 0, 255, 0) 0deg,
+    #8a8989 360deg
+  );
+  animation: spin 2s infinite linear;
+}
+
+.spinner::before {
+  content: "";
+  border-radius: 50%;
+  width: 90%;
+  height: 90%;
+  background-color: #eee;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+/* ========================= filter batches=============== */
+
+.filter {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+#filter {
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#filter select {
+  border-radius: 3px;
+  padding: 0px 2px;
+  background-color: #fbf9f9;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  font-size: 1em;
+  font-weight: 500;
+  color: #8d8d8d;
+}
+
+#filter select option {
+  background-color: #fff;
+  color: var(--myOrange);
+}
+
+#filter select option:first-child {
+  color: #454545;
+}
+
+/* ======================= batch card====== */
+.batch {
+  width: 32%;
+  height: 100%;
+  padding: 1em;
+  background-color: #fff;
+  border-radius: 7px;
+  position: relative;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 3px 6px 0 rgba(0, 0, 0, 0.19);
+}
+
+.batch-card {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 1em;
+  font-weight: 500;
+  color: var(--lightgray);
+}
+
+.batch-card h1 {
+  font-size: 1em;
+  color: var(--myOrange);
+  text-transform: capitalize;
+}
+
+.batch-card > div {
+  border-bottom: 2px solid var(--myOrange);
+  display: flex;
+  justify-content: space-between;
+}
+
+.batch-card > p {
+  color: var(--myOrange);
+  /* color: #fb7548; */
+}
+
+.batch-card span {
+  color: var(--lightgray);
+}
+.batch-date {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.batch-date p {
+  color: var(--myOrange);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.batch-date p span {
+  color: var(--lightgray);
+}
+.batch-date span {
+  color: var(--lightgray);
+}
+
+h1 .batch-status {
+  font-size: 12px;
+  color: var(--lightgray);
+}
+
+/* ==================dynamic card css background=== */
+
+.batch.completed .batch-status{
+  color: #ff0000;
+}
+.batch.current .batch-status{
+  color: green;
+}
+.batch.upcoming .batch-status{
+  color: orange;
+}
+.icon-item {
+  position: absolute;
+  color: #bdbdbd;
+  font-size: 5em;
+  align-self: center;
+  top: 35%;
+  left: 40%;
+  opacity: 0.4;
+}
+
+.expired-icon {
+  position: absolute;
+  font-size: 1.5em;
+  bottom: 10px;
+  right: 20px;
+}

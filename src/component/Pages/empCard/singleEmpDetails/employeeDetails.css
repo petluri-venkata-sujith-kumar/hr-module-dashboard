@@ -1,0 +1,221 @@
+
+:root {
+  --orange: #eb5424;
+  --background: #f8fafb;
+}
+
+.emp-Main-Div {
+  display: flex;
+  width: 100%;
+  height: 90%;
+  margin: 0 auto;
+  gap: 1em;
+  padding: 2em;
+  /* border: 1px solid; */
+}
+
+.emp-Profile {
+  /* flex-basis: 25%; */
+  height: 90vh;
+  background-color: var(--background);
+  padding-top: 7vh;
+  border-radius: 0.5em;
+  position: fixed;
+  width: 25%;
+  /* border: 1px solid; */
+}
+
+.emp-Profile img {
+  width: 12em;
+  height: 12em;
+  border-radius: 50%;
+  position: relative;
+  left: 2.3em;
+}
+
+#emp-Id {
+  padding-left: 1em;
+}
+#employee-Batch {
+  /* flex-basis: 75%; */
+  background-color: white;
+  height: 90vh;
+  width: 75%;
+  overflow-y: auto;
+  position: absolute;
+  left: 20em;
+}
+
+.employee-Name {
+  width: 100%;
+  text-align: center;
+  color: var(--orange);
+  transform: translateX(-1.8em);
+}
+.employee-Name + p {
+  text-align: center;
+  width: 100%;
+  transform: translateX(-3em);
+  font-size: 0.9em;
+  font-weight: 600;
+  margin-top: 0.2em;
+}
+
+.emp-details {
+  display: flex;
+  margin-top: 1.5em;
+  padding: 0.7em;
+  padding-left: 1.5em;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1em;
+}
+
+.emp-details span {
+  font-size: 1.2em;
+}
+.emp-details span:hover {
+  color: var(--orange);
+}
+
+.emp-details p {
+  font-size: 1.2em;
+}
+
+/* batch css starts Here */
+
+.batch-Heading {
+  color: var(--orange);
+  font-size: 2em;
+  padding: 0.2em;
+}
+.filter-container {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  height: 3em;
+}
+
+.card-detail {
+  width: 18em;
+  height: 13em;
+  border: 2px solid var(--background);
+  padding: 1em;
+  background-color: var(--background);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
+}
+
+.card-detail h2 {
+  margin-bottom: 0.8em;
+}
+
+.card-detail p {
+  margin-top: 0.5em;
+}
+
+.wrapper-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.8em;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.Header {
+  position: relative;
+}
+
+.filter-detail {
+  width: 5em;
+  height: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0.2em;
+  margin-right: 1em;
+  float: right;
+  transform: translate(-2em, -2em);
+  position: absolute;
+  top: 3em;
+  right: 0;
+}
+.filter-detail > span {
+  font-size: 1.5em;
+  padding: 0.2em;
+}
+.filter-detail > #DropDown {
+  border: none;
+  outline: none;
+}
+.back-btn{
+    height: 2.5em;
+    width: 5em;
+    position: absolute;
+    top: 0.5em;
+    right: 1em;
+    padding: 0.5em 1.2em;
+    text-decoration: none;
+    background-color: var(--orange);
+    border-radius: 5px;
+    color: #fff;
+}
+
+.batch-Heading > span {
+  color: rgb(65, 64, 64);
+}
+
+.no-Data-Found{
+    position: absolute;
+    top: 9em;
+    left:11em;
+}
+
+
+@media screen and (max-width: 600px) {
+  #parent {
+    height: auto; /* Adjust as needed for responsiveness */
+  }
+
+  .emp-Main-Div {
+    flex-direction: column; /* Change to a column layout on smaller screens */
+    height: auto; /* Adjust as needed for responsiveness */
+    padding: 1em; /* Adjust padding for better spacing on smaller screens */
+  }
+
+  .emp-Profile {
+    flex-basis: 100%; /* Take full width on smaller screens */
+    height: auto; /* Adjust as needed for responsiveness */
+    position: relative;
+    width: 100%; /* Take full width on smaller screens */
+  }
+
+  #employee-Batch {
+    position: static; /* Remove fixed position on smaller screens */
+    left: auto; /* Reset left position on smaller screens */
+  }
+
+  .employee-Name,
+  .employee-Name + p,
+  .emp-details {
+    transform: translateX(0);
+    text-align: center; /* Reset translation on smaller screens */
+  }
+
+  .filter-container {
+    flex-direction: column; /* Change to a column layout on smaller screens */
+    height: auto; /* Adjust as needed for responsiveness */
+  }
+
+  .card-detail {
+    width: 100%; /* Take full width on smaller screens */
+    margin-bottom: 1em; /* Add space between cards on smaller screens */
+  }
+
+  .filter-container {
+    float: none; /* Remove float on smaller screens */
+    transform: none; /* Remove translation on smaller screens */
+    margin: 0; /* Reset margin on smaller screens */
+  }
+}

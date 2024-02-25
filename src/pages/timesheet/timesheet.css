@@ -1,0 +1,177 @@
+.attendance .attendenceBlock {
+  width: 80vw;
+  border-radius: 0.5rem;
+  box-shadow: 1px 2px 10px rgb(217, 215, 215);
+  position: fixed;
+}
+.article #sort {
+  padding: 0.5rem;
+  background-color: #2e52dc;
+  color: white;
+  font-weight: 500;
+  border-radius: 0.45rem;
+  border: 1px solid #2e52dc;
+}
+
+.article select:hover {
+  background-color: #495ed2;
+}
+
+.attendanceLog {
+  width: inherit;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 0.625rem 0.9375rem;
+  margin: 0.125rem 0.25rem;
+}
+
+.attendanceLog h2 {
+  font-weight: 700;
+  color: #2e52dc;
+}
+
+.table {
+  width: inherit;
+}
+.table {
+  overflow-y: scroll;
+  height: 80vh;
+  overflow-x: hidden;
+}
+.table::-webkit-scrollbar {
+  display: none;
+}
+
+.table table,
+.table table th,
+.table table td {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.table table {
+  box-sizing: border-box;
+  width: inherit;
+  height: auto;
+  border-collapse: collapse;
+}
+
+.table table thead {
+  position: sticky;
+  top: 0;
+  height: 9vh;
+  background-color: #eaedfe;
+  font-size: 1.2em;
+  color: #2e52dc;
+  font-weight: 900;
+}
+
+.table table tbody {
+  overflow-y: scroll;
+}
+.table table tbody td {
+  width: inherit;
+  height: 7vh;
+  font-size: 1.1em;
+}
+
+.table table tbody tr:nth-child(even) {
+  background-color: #e3e3e4;
+}
+.table table tbody tr:nth-child(odd) {
+  background-color: white;
+}
+
+
+
+
+/* .attendance .attendenceBlock {
+  width: 80vw;
+  border-radius: 0.5rem;
+  box-shadow: 1px 2px 10px rgb(217, 215, 215);
+  position: fixed;
+}
+article #sort {
+  padding: 0.5rem;
+  background-color: #2e52dc;
+  color: white;
+  font-weight: 500;
+  border-radius: 0.45rem;
+  border: 1px solid #2e52dc;
+}
+
+article select:hover {
+  background-color: #495ed2;
+}
+
+.attendanceLog {
+  width: inherit;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 0.625rem 0.9375rem;
+  margin: 0.125rem 0.25rem;
+}
+
+.attendanceLog h2 {
+  font-weight: 700;
+  color: #2e52dc;
+}
+
+.table {
+  width: inherit;
+}
+.table {
+  overflow-y: scroll;
+  height: 80vh;
+  overflow-x: hidden;
+}
+.table::-webkit-scrollbar {
+  display: none;
+}
+
+table,
+th,
+td {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+table {
+  box-sizing: border-box;
+  width: inherit;
+  height: auto;
+  border-collapse: collapse;
+}
+
+table thead {
+  position: sticky;
+  top: 0;
+  height: 9vh;
+  background-color: #eaedfe;
+  font-size: 1.2em;
+  color: #2e52dc;
+  font-weight: 900;
+}
+table tbody {
+  overflow-y: scroll;
+}
+table tbody td {
+  width: inherit;
+  height: 7vh;
+  font-size: 1.1em;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #e3e3e4;
+}
+table tbody tr:nth-child(odd) {
+  background-color: white;
+} */

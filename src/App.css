@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@300&display=swap");
+
+:root {
+  --black: black;
+  --base: orangered;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+.container-container {
+  display: flex;
+}
+
+.hr-Dashboard {
+  display: flex;
+}
+.hr-Sidebar {
+  background: #f8fafb;
+  height: 100vh;
+  box-shadow: 1px 3px 1px 1px #eef2f2;
+  width: 3.125em;
+  transition: width 0.3s ease;
+  color: var(--black);
+  position: fixed;
+}
+
+.top-Section {
+  display: flex;
+  align-items: center;
+  padding: 1.25em 0.9375em;
+}
+
+.logo-hrdashboard {
+  font-size: 0.875em;
+}
+.logo-hrdashboard img{
+  height: 2em;
+}
+.logo-Text {
+  color: var(--base);
+}
+
+.Bars-icon {
+  display: flex;
+  font-size: 1.5625em;
+  color: balck;
+  cursor: pointer;
+  margin-left: auto;
+  margin-top: -5px;
+}
+
+.sidebarClose {
+  width: 3.125em;
+  background-color: var(--black);
+  height: 100vh;
+}
+
+.link:hover {
+  background: #f7eae6;
+  color: #eb6435;
+  transition: all 0.2s;
+}
+
+.active {
+  background: #f7eae6;
+  color: #eb6435;
+}
+
+.icon,
+.link_text {
+  font-size: 1em;
+}
+
+.hr-Sidebar.open {
+  width: 15.625em;
+}
+
+.logo-Text img {
+  display: block;
+  margin: auto;
+  width: 3.125em;
+  height: 3.4375em;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  color: var(--black);
+  text-decoration: none;
+  padding: 0.625em;
+  margin-top: 0.625em;
+  gap: 12px;
+}
+
+.link_text {
+  margin-left: 0.625em;
+  display: none;
+  color: var(--black);
+}
+
+.link:hover .link_text {
+  display: block;
+  color: var(--base);
+}
+
+.icon-icon {
+  font-size: 1.25em;
+}
+
+.link.active {
+  background-color: #f7eae6;
+  color: var(--base);
+}
+
+.opened {
+  position: absolute;
+  left: 17.5em;
+  width: 80%;
+  padding: 1em;
+}
+.closed {
+  position: absolute;
+  left: 4em;
+  width: 94%;
+  padding: 1em;
+}
+
+@media only screen and (max-width: 768px) {
+  .hrsidebar {
+    width: 100%;
+  }
+
+  .navbar .leftContainer-nav input {
+    width: 100%;
+  }
+
+  .rightContainer-nav li {
+    padding: 0.9375em 1em;
+  }
+
+  .opened,
+  .closed {
+    width: 100%;
+    left: 0;
+  }
+
+  .searchicon {
+    left: 70%;
+  }
+}

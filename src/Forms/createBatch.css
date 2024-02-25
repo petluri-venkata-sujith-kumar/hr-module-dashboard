@@ -1,0 +1,150 @@
+:root {
+  --baseColor: #eb5624;
+}
+
+.form-Conatiner{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  z-index: 222;
+  width: 94vw;
+  height: 45em;
+  backdrop-filter: blur(2em);
+}
+
+.batch-Form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-Container {
+  display: flex;
+  gap: 1.25em;
+  margin-bottom: 1.25em;
+}
+
+.wrap-Container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.header {
+  flex-basis: 80%;
+  margin-top: 4.375em;
+}
+
+.batch-Container {
+  margin-top: 17%;
+  height: 28em;
+  width: 37.5em;
+  border: 1px solid white;
+  border-radius: 0.313px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 1.25em;
+  background: WHITE;
+  position: fixed;
+  top: -6em;
+  left: 26em;
+}
+
+.create-Batch {
+  color: var(--baseColor);
+  margin-bottom: 1.5em;
+  padding-bottom: 0.938em;
+  border-bottom: 1px solid #eb5624;
+  text-align: left;
+  font-weight: 400;
+}
+
+#close-Btn {
+  float: right;
+  padding: 0.5em;
+  position: relative;
+  top: -0.375em;
+  border: none;
+  background: none;
+  font-size: 1.25em;
+  color: rgba(22, 20, 20, 0.8);
+}
+
+#close-Btn:hover {
+  transition-duration: 1s;
+  border: 1px solid var(--baseColor);
+}
+
+#create-Batchbtn {
+  background-color: var(--baseColor);
+  color: rgb(255, 255, 255);
+  padding: 0.8em;
+  border: none;
+  border-radius: 0.25em;
+  cursor: pointer;
+  width: 40%;
+  margin: auto;
+  font-size: 0.9em;
+}
+
+/* #create-Employeebtn:hover {
+  background-color: #ac360f;
+  color: rgb(255, 255, 255);
+  transition-duration: 2s;
+} */
+
+/* styles.css */
+
+/* Input Component */
+#subjectName,#batchStartDate,#batchcode,#batchEndDate,#batchStatus,#instituteName,#batchMode,#location
+ {
+  width: 100%;
+  padding: 0.938em;
+  border: 2px solid #e0e0e0;
+  border-radius: 5px;
+  font-size: 15px;
+  transition: border-color 0.2s, color 0.2s, font-size 0.2s, font-weight 0.2s;
+  outline: none;
+  border-color: #e0e0e0;
+  color: rgb(22, 20, 20);
+  font-weight: normal;
+}
+
+input:focus {
+  color: rgb(22, 20, 20);
+  font-weight: 500;
+  outline: none;
+}
+
+/* Label Component */
+label {
+  padding: 0.875em;
+  pointer-events: none;
+  margin-top: 2px;
+  margin-left: 2px;
+  position: absolute;
+  height: 10px;
+  left: 0;
+  top: 0;
+  font-weight: 600;
+  transition: 0.2s;
+  transition-timing-function: ease;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  background-color: #ffffff;
+  color: rgba(22, 20, 20, 0.6);
+}
+
+input:focus + label,
+select:focus + label {
+  color: #ed940d;
+  top: -23px;
+  transform: scale(0.8);
+  left: -10px;
+}
+.focus + label,
+.focus > label {
+  color: #ed940d;
+  top: -23px;
+  transform: scale(0.8);
+  left: -10px;
+}

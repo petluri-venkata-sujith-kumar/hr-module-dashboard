@@ -1,0 +1,148 @@
+:root {
+  --baseColor: #eb5624;
+}
+.main-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  z-index: 222;
+  width: 94vw;
+  height: 55em;
+  backdrop-filter: blur(8px);
+}
+.employee-form {
+  display: flex;
+  flex-direction: column;
+}
+.Fd {
+  display: flex;
+  gap: 1.25em;
+  margin-bottom: 1.25em;
+}
+
+.Wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.header {
+  flex-basis: 80%;
+  margin-top: 4.375em;
+}
+.employee-Container {
+  margin-top: 17%;
+  height: 24em;
+  width: 37.5em;
+  border: 1px solid white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 1.25em;
+  background: WHITE;
+  position: fixed;
+  top: 5em;
+  left: 26em;
+}
+
+.create-Employee {
+  color: var(--baseColor);
+  margin-bottom: 40px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eb5624;
+  text-align: left;
+  font-weight: 400;
+}
+
+#close-Btn {
+  float: right;
+  padding: 8px;
+  position: relative;
+  top: -6px;
+  border: none;
+  background: none;
+  font-size: 20px;
+  color: rgba(22, 20, 20, 0.8);
+}
+
+#close-btn:hover {
+  transition-duration: 1s;
+  border: 1px solid var(--baseColor);
+}
+
+#create-Employeebtn {
+  background-color: var(--baseColor);
+  color: rgb(255, 255, 255);
+  padding: 1em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 50%;
+  margin: auto;
+  font-size: 0.8em;
+}
+
+#create-Employeebtn:hover {
+  background-color: #ac360f;
+  color: rgb(255, 255, 255);
+  transition-duration: 2s;
+}
+
+/* Input Component */
+#userStatus,
+#userRole,
+#employeePhone,
+#employeeEmail,
+#employeeName,
+#employeeId {
+  width: 100%;
+  padding: 0.938em;
+  border: 2px solid #e0e0e0;
+  border-radius: 5px;
+  font-size: 15px;
+  transition: border-color 0.2s, color 0.2s, font-size 0.2s, font-weight 0.2s;
+  outline: none;
+  border-color: #e0e0e0;
+  color: rgb(22, 20, 20);
+  font-weight: normal;
+}
+
+input:focus {
+  color: rgb(22, 20, 20);
+  font-weight: 500;
+  outline: none;
+}
+
+/* Label Component */
+.label {
+  padding: 0.875em;
+  pointer-events: none;
+  margin-top: 2px;
+  margin-left: 2px;
+  position: absolute;
+  height: 2px;
+  left: 0;
+  top: 0;
+  font-weight: 600;
+  transition: 0.2s;
+  transition-timing-function: ease;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  font-size: 0.8em;
+  background-color: #ffffff;
+  color: rgba(22, 20, 20, 0.6);
+}
+
+input:focus + .label,
+select:focus + .label {
+  color: #ed940d;
+  top: -23px;
+  transform: scale(0.8);
+  left: -10px;
+}
+.focus + .label,
+.focus > .label {
+  color: #ed940d;
+  top: -23px;
+  transform: scale(0.8);
+  left: -10px;
+}

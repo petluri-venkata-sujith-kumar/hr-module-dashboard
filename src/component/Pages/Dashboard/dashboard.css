@@ -1,0 +1,70 @@
+.hrwelcome{
+  display: flex;
+  width: 50%;
+  padding: 1em;
+}
+.hrwelcome .hrImg img{
+  height: 8em;
+  width: 8em;
+  border-radius: 50%;
+  padding: 1em;
+}
+.hrwelcome .hrText{
+  padding: 0 1em;
+}
+.hrwelcome .hrText h1{
+  font-size: 3em;
+}
+.hrwelcome .hrText p{
+  font-size: 1.6em;
+}
+.hrtableContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2em;
+  flex-direction: row;
+}
+
+.hrcontent-table {
+  border-collapse: collapse;
+  font-size: 1.05em;
+  min-width: 40em;
+  min-height: 18.75em;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 1.25em rgba(0, 0, 0, 0.15);
+  padding: 0.313em;
+}
+
+.hrcontent-table thead tr {
+  background-color: #eb5424;
+  color: #ffffff;
+  width: 100%;
+  font-weight: bold;
+  padding: 0.625em;
+  text-align: left;
+}
+
+.hrcontent-table thead th {
+  padding: 1.25em;
+  padding-left: 1.875em;
+}
+
+.hrcontent-table td {
+  padding: 0.938em 2.5em;
+  align-items: center;
+  justify-content: center;
+}
+
+.hrcontent-table tbody tr {
+  border-bottom: 2px solid #dddddd;
+  align-items: center;
+  justify-content: center;
+}
+
+.hrcontent-table tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+}

@@ -1,0 +1,175 @@
+:root {
+    --bgcolor-btn: #eb5424;
+    --bgcolor-card: #f8fafb;
+  }
+  
+  .empContainer-Data {
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .empContainer-Data .createEmp {
+    font-size: 1em;
+  }
+  
+  .empContainer-Data .createEmp span {
+    background-color: var(--bgcolor-btn);
+    padding: 0.65em;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    margin-left: 8em;
+  }
+  
+  .empcard-Data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+  }
+  
+  .wrapper-wrapperclass {
+    border: 2px solid var(--bgcolor-card);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    width: 20em;
+    padding: 1em;
+    background-color: var(--bgcolor-card);
+  }
+  
+  .empimg-Image img {
+    height: 4em;
+    width: 4em;
+    border-radius: 100%;
+  }
+  
+  .empDetails-Details {
+    display: flex;
+    gap: 0.2em;
+    flex-direction: column;
+  }
+  
+  .empimg-Image {
+    border-right: 2px solid var(--bgcolor-card);
+    position: relative;
+    padding-left: 2em;
+  }
+  
+  .info-DATA .info_icons {
+    position: relative;
+    top: 0.2em;
+  }
+  
+  .empDetails-Details .nameEMP {
+    font-size: 1.6em;
+    text-transform: capitalize;
+    font-weight: 500;
+  }
+  
+  .empDetails-Details .info-DATA {
+    position: relative;
+    padding: 1em;
+    padding-top: 1.5em;
+    line-height: 1.3em;
+    font-size: 1em;
+    background-color: #fff;
+    border-radius: 5px;
+    font-weight: 200;
+    color: #111111cb;
+  }
+  
+  .roleEMP {
+    font-size: 0.8em;
+    color: #ccc;
+  }
+  
+  .statusEMP {
+    position: absolute;
+    top: 1.6em;
+    left: 3.5em;
+    font-size: 1.5em;
+  }
+  
+  .viewMoreData {
+    position: absolute;
+    top: 0.4em;
+    left: 13em;
+    cursor: pointer;
+    font-size: 1.2em;
+    width: 1em;
+  }
+  
+  .tooltip {
+    visibility: hidden;
+    background-color: #fff;
+    padding: 0.2em;
+    color: var(--bgcolor-btn);
+    text-transform: capitalize;
+  }
+  
+  .edit_icon {
+    position: absolute;
+    top: 0.5em;
+    left: 11em;
+    width: 1em;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+  
+  .edit_icon:hover .tooltip {
+    visibility: visible;
+    position: absolute;
+    display: flex;
+    font-size: 0.8em;
+    left: -0.3em;
+    border-radius: 5px;
+  }
+  
+  .viewMoreData:hover .tooltip {
+    visibility: visible;
+    display: flex;
+    width: 6em;
+    position: absolute;
+    left: -1.7em;
+    font-size: 0.7em;
+    border-radius: 5px;
+  }
+  
+  .filters-Data {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding: 1.2em;
+  }
+  
+  .search-Bar input {
+    width: 65em;
+    padding: 0.8em;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid;
+  }
+  
+  .filters-Data .search-Bar {
+    width: 60%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+  }
+  
+  .search-Bar span {
+    position: absolute;
+    top: 2.9em;
+    left: 67.5%;
+  }
+  
+  #toggleopened {
+    overflow-y: hidden;
+  }
+  
+  .empSearchBarContainer {
+    display: flex;
+    align-items: center;
+  }
+  
